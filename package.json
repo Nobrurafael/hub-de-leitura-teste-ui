@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Nobrurafael/hub-de-leitura-teste-ui#readme",
   "dependencies": {
+    "@faker-js/faker": "^10.2.0",
     "cypress": "^14.5.3"
   }
 }
