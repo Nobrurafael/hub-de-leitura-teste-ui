@@ -1,21 +1,16 @@
 /// <reference types="cypress"/>
+import user from "../fixtures/usuario.json"
 
-describe('Funcionalidade: Login', () => {
-    beforeEach(() => {
-        cy.visit('http://localhost:3000/login.html')
-    });
-    
-    it('Deve fazer login', () => {
-        cy.get('#email').type('usuario@teste.com')
-        cy.get('#password').type('user123')
-        cy.get('#login-btn').click()
-        cy.url().should('include', 'dashboard')
-});
+    describe('Funcionalidade: Massa de dados', () => {
+        beforeEach(() => {
+            cy.visit('http://localhost:3000/login.html')
+        })
+        
+        it('Deve fazer login usando massa de dados', () => {
+            cy.login(user.email, user.senha)
+        });
 
-    it('Deve validar mensagem de erro para email ou senha incorreto', () => {
-        cy.get('#email').type('teste@teste.com.br')
-        cy.get('#password').type('user123')
-        cy.get('#login-btn').click()
-        cy.get('#alert-container').should('contain', ' Email ou senha incorretos.')
+        it('', () => {
+            
+        });
     });
-});

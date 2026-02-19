@@ -1,0 +1,18 @@
+[
+    {
+        "livro": "A Divina Comédia",
+        "genero": "Poesia"
+    },
+    {
+        "livro": "O Alquimista",
+        "genero": "Ficção"
+    },
+    {
+        "livro": "Dom Casmurro",
+        "genero": "Ficção Clássica"
+    },
+    {
+        "livro": "A Revolução dos Bichos",
+        "genero": "Ficção"
+    }
+]
